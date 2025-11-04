@@ -25,7 +25,7 @@ public class Solution {
 
             // Only process letters (ignore spaces, punctuation, numbers)
             if (Character.isLetter(ch)) {
-                int count = freq.getOrDefault(ch, 0) + 1; // Case-sensitive tracking
+                int count = freq.getOrDefault(ch, 0) + 1; // If ch exists in the map, give me its value; otherwise, give me the default value 0.
                 freq.put(ch, count);
 
                 // Replace only the 2nd occurrence of that exact-case character
